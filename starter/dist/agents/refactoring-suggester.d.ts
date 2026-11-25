@@ -6,5 +6,6 @@ export declare const refactoringSuggester: {
     name: string;
     description: string;
     instructions: string;
+    tools: string[];
 };
 //# sourceMappingURL=refactoring-suggester.d.ts.map

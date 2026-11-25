@@ -6,5 +6,6 @@ export declare const testCoverageAnalyzer: {
     name: string;
     description: string;
     instructions: string;
+    tools: string[];
 };
 //# sourceMappingURL=test-coverage-analyzer.d.ts.map

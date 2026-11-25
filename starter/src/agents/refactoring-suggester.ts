@@ -7,5 +7,6 @@ import { REFACTORING_SUGGESTER_PROMPT } from '../prompts/refactoring-suggester.p
 export const refactoringSuggester = {
   name: 'refactoring-suggester',
   description: 'Identifies refactoring opportunities, code modernization, and design pattern improvements',
-  instructions: REFACTORING_SUGGESTER_PROMPT
+  instructions: REFACTORING_SUGGESTER_PROMPT,
+  tools: ['Read', 'Grep', 'Glob', 'Skill']
 };

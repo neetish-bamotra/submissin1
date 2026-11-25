@@ -6,6 +6,7 @@ import { CODE_QUALITY_ANALYZER_PROMPT } from '../prompts/code-quality-analyzer.p
 export const codeQualityAnalyzer = {
     name: 'code-quality-analyzer',
     description: 'Analyzes code for security vulnerabilities, performance issues, maintainability concerns, and best practice violations',
-    instructions: CODE_QUALITY_ANALYZER_PROMPT
+    instructions: CODE_QUALITY_ANALYZER_PROMPT,
+    tools: ['Read', 'Grep', 'Glob', 'Skill']
 };
 //# sourceMappingURL=code-quality-analyzer.js.map

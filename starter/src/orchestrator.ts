@@ -94,14 +94,13 @@ export class CodeReviewOrchestrator {
             testCoverageAnalyzer,
             refactoringSuggester
           ] as any,
-          tools: ['task'] as any,
           mcpServers: mcpServersConfig as any,
+          allowedTools: ['Task', 'mcp__github', 'mcp__eslint'],
           outputFormat: {
             type: 'json_schema',
             schema: ReviewReportJSONSchema as any
           },
-          maxTurns: this.maxTurns,
-          permissionMode: 'acceptEdits' as any
+          maxTurns: this.maxTurns
         }
       });
 

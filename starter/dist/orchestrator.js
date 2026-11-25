@@ -72,14 +72,13 @@ export class CodeReviewOrchestrator {
                         testCoverageAnalyzer,
                         refactoringSuggester
                     ],
-                    tools: ['task'],
                     mcpServers: mcpServersConfig,
+                    allowedTools: ['Task', 'mcp__github', 'mcp__eslint'],
                     outputFormat: {
                         type: 'json_schema',
                         schema: ReviewReportJSONSchema
                     },
-                    maxTurns: this.maxTurns,
-                    permissionMode: 'acceptEdits'
+                    maxTurns: this.maxTurns
                 }
             });
             // Iterate over the conversation to get messages
