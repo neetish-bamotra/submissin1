@@ -1,5 +1,4 @@
 node_modules/
-dist/
 .env
 *.log
 logs/
@@ -9,4 +8,3 @@ logs/
 coverage/
 *.tsbuildinfo
 .temp/
-reports/
